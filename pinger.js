@@ -2,7 +2,7 @@ const https = require('https');
 
 console.log('Pinger started...');
 
-const url = 'https://vipul-attri-portfolio.netlify.app/'; // <-- Replace with your website
+const url = 'https://vipul-attri-portfolio.netlify.app/'; // Single website to ping
 
 function pingWebsite(url) {
   https.get(url, (res) => {
@@ -13,7 +13,7 @@ function pingWebsite(url) {
 }
 
 function pingAllWebsites() {
-  urls.forEach(pingWebsite);
+  pingWebsite(url); // Call pingWebsite directly for a single URL
 }
 
 pingAllWebsites();
