@@ -3,7 +3,7 @@
 const https = require('https');
 const http = require('http');
 
-const url = 'https://vipul-attri-portfolio.netlify.app/'; // <-- Replace with your website
+const url ='https://pinger-pj83.onrender.com/'; // <-- Replace with your website
 
 function pingWebsite() {
   const lib = url.startsWith('https') ? https : http;
