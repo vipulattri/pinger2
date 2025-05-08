@@ -2,12 +2,7 @@ const https = require('https');
 
 console.log('Pinger started...');
 
-const urls = [
-  'https://pinger-pj83.onrender.com/',
-  'https://vipul-attri-portfolio.netlify.app/',
-  'https://pinger2-p72y.onrender.com',
-  // '// <-- Replace this with your second website
-];
+const url = 'https://vipul-attri-portfolio.netlify.app/'; // <-- Replace with your website
 
 function pingWebsite(url) {
   https.get(url, (res) => {
